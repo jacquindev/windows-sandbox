@@ -19,8 +19,6 @@ Simple [PowerShell](https://github.com/PowerShell/PowerShell) Script to start [W
   ./Start-WindowsSandbox.ps1
   ```
 
-<br>
-
 ## 📝 License
 
 Copyright © 2024 [Jacquin Moon](https://github.com/jacquindev).<br />
