@@ -3,8 +3,7 @@
 
 <br>
 
-> [!Description]<br>
-> Simple [PowerShell](https://github.com/PowerShell/PowerShell) Script to start [Windows Sandbox](https://learn.microsoft.com/en-us/windows/security/application-security/application-isolation/windows-sandbox/windows-sandbox-overview) in no time!
+Simple [PowerShell](https://github.com/PowerShell/PowerShell) Script to start [Windows Sandbox](https://learn.microsoft.com/en-us/windows/security/application-security/application-isolation/windows-sandbox/windows-sandbox-overview) in no time!
 
 <br>
 
