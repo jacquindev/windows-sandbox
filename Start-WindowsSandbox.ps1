@@ -28,7 +28,6 @@ if (-not (Test-Path "$($MappedFolder)\$($LogonCommand)")) {
 }
 
 $wsbFile = "$($MappedFolder)\WindowsSandbox.wsb"
-$LogonCommandFull = 'Powershell.exe -ExecutionPolicy bypass -File C:\users\wdagutilityaccount\desktop\' + $(Get-ChildItem -Path $($wsbFile) -Directory).Directory.Name + '\' + $LogonCommand
 Tee-Object -FilePath $wsbFile -Append:$false
 
 $wsb = @()
@@ -40,13 +39,15 @@ $wsb += "<ReadOnly>true</ReadOnly>"
 $wsb += "</MappedFolder>"
 $wsb += "</MappedFolders>"
 $wsb += "<LogonCommand>"
+
+$LogonCommandFull = 'Powershell.exe -ExecutionPolicy bypass -File C:\users\wdagutilityaccount\desktop\' + $(Get-ChildItem -Path $($wsbFile) -Directory).Directory.Name + '\' + $LogonCommand
 $wsb += "<Command>$($LogonCommandFull)</Command>"
 $wsb += "</LogonCommand>"
 $wsb += "</Configuration>"
 
 $wsb | Out-File $wsbFile -Force
 
-Write-Host "Saved configuration in $wsbFile." -ForegroundColor Green
+Write-Host "Saved configuration in $wsbFile." -ForegroundColor Yellow
 Write-Host "Starting Windows Sandbox..." -ForegroundColor Blue
 Invoke-Item $wsbFile
 
