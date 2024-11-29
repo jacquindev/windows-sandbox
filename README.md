@@ -1,11 +1,7 @@
 <h1 align="center">Windows Sandbox Setup <a href="https://github.com/jacquindev/windows-sandbox/blob/main/LICENSE" target="_blank"><img alt="License: MIT" src="https://img.shields.io/badge/License-MIT-yellow.svg" />
 </a></h1>
 
-<br>
-
 Simple [PowerShell](https://github.com/PowerShell/PowerShell) Script to start [Windows Sandbox](https://learn.microsoft.com/en-us/windows/security/application-security/application-isolation/windows-sandbox/windows-sandbox-overview) in no time!
-
-<br>
 
 ## ✨ Usage
 
